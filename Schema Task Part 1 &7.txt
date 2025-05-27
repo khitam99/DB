@@ -1,0 +1,42 @@
+Part 1:
+1-What is a schema in SQL Server?
+A schema in SQL Server is a logical container that groups database objects such as tables, views, stored procedures, etc., under a specific name, often used for managing access and organization.
+2-How is a schema different from a database?
+A database is a complete storage system that holds data and objects, while a schema is a subset within a database that organizes those objects. 
+3-List at least two benefits of using schemas in real applications:
+
+-Security management: Permissions can be set at the schema level to control access to groups of objects.
+
+-Organizational clarity: Objects can be grouped by functionality, team, or application module, improving maintainability.
+4-Can different schemas have the same table name?
+Yes, different schemas within the same database can have tables with the same name (e.g., sales.Orders and hr.Orders).
+
+
+Part 7:
+1- What are the advantages of separating tables into schemas in a large system?
+
+-Better organization: Tables related to different modules or departments are logically grouped, making the system easier to understand and manage.
+
+-Simplified maintenance: Changes and updates can be made more efficiently when related objects are grouped.
+
+-Avoids name conflicts: Allows the same table name in different schemas without conflict (e.g., finance.Employees vs hr.Employees).
+
+2-How can schemas support security and access control?
+
+-Role-based permissions: Access can be granted to specific schemas, allowing users to interact only with relevant data.
+
+-Minimized risk: Sensitive data can be isolated in specific schemas, reducing the chance of unauthorized access.
+
+3- Suggest a new department that could be added to this system and which tables it would manage:
+
+-Suggested Department: IT Support
+
+-Tables it could manage:
+
+support.Tickets – stores IT support requests
+
+support.Assets – tracks company devices and software
+
+support.Users – logs users and their assigned equipment
+
+
